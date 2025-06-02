@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Crowdfunding DApp</title>
+</head>
+<body>
+    <h1>Crowdfunding DApp</h1>
+
+    <button onclick="connectWallet()">Connect Wallet</button>
+
+    <h2>Create Campaign</h2>
+    <input id="title" placeholder="Title">
+    <input id="description" placeholder="Description">
+    <input id="goal" placeholder="Goal in wei">
+    <input id="duration" placeholder="Duration (seconds)">
+    <button onclick="createCampaign()">Create Campaign</button>
+
+    <h2>Pledge</h2>
+    <input id="campaignIdPledge" placeholder="Campaign ID">
+    <input id="amountPledge" placeholder="Amount in wei">
+    <button onclick="pledge()">Pledge</button>
+
+    <h2>Claim Funds</h2>
+    <input id="campaignIdClaim" placeholder="Campaign ID">
+    <button onclick="claimFunds()">Claim Funds</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
